@@ -1,0 +1,14 @@
+<% for (var i = 0; i < results.length; ++i) { %>
+  <div class="col-md-12 server">
+    <div class="col-md-6 url"><%= results[i].url %></div>
+    <div class="col-md-6 url-status">
+        <% if (results[i].last_result === null) { %>
+            <span class="label label-default">Not checked yet.</span>
+        <% } else if (results[i].last_result === false) { %>
+            <span class="label label-danger">Error</span>
+        <% } else { %>
+            <span class="label label-success"><%= results[i].last_result %> ms</span>
+        <% } %>
+    </div>
+  </div>
+<% } %>

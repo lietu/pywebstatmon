@@ -1,0 +1,17 @@
+# Serve the web interface on port 8000
+http_port: 8000
+
+# Write log to the file pywebstatmon.log
+log_file: pywebstatmon.log
+
+monitors:
+  # Monitor my homepage and make sure it doesn't suddenly become someone else's homepage
+  http://lietu.net/:
+    poll_seconds: 60
+    content:
+      - Lietu's homepage
+      - Janne Enberg
+
+  # Also monitor that my CV stays available
+  http://lietu.net/cv.html:
+    poll_seconds: 300
