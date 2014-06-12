@@ -38,19 +38,19 @@ class Monitor(object):
             start = time()
             contents = self._fetch_contents()
             end = time()
-            elapsed = "{:.3f}".format(end - start)
+            elapsed = "{0:.3f}".format(end - start)
 
             if self._check_contents(contents, self.settings):
                 log.info(result_log.format(
                     url=self.url,
-                    result="GOOD {} ms response time".format(elapsed)
+                    result="GOOD {0} ms response time".format(elapsed)
                 ))
 
                 result = elapsed
             else:
                 log.warning(result_log.format(
                     url=self.url,
-                    result="BAD, Content mismatch, {} ms response time".format(
+                    result="BAD, Content mismatch, {0} ms response time".format(
                         elapsed
                     )
                 ))
@@ -58,7 +58,7 @@ class Monitor(object):
         except IOError as e:
             log.error(result_log.format(
                 url=self.url,
-                result="BAD, Connection error: {}".format(e)
+                result="BAD, Connection error: {0}".format(e)
             ))
 
         return result
