@@ -12,6 +12,12 @@ The main goals for this small tool are:
  - Provides the status information on a simple web interface
  
 
+## What's the status currently?
+
+It looks like the tool currently only works with Python 2.7, will try and fix the issues with other versions at some point in time. Feel free to help!
+[![Build Status](https://travis-ci.org/lietu/pywebstatmon.svg?branch=master)](https://travis-ci.org/lietu/pywebstatmon)
+
+
 ## Installation
 
 Just get the code, and run "pip install -r requirements.txt".
