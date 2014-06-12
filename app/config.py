@@ -13,7 +13,7 @@ class Config(object):
     def read_from_file(self, path):
         """Load configuration parameters from a file"""
 
-        with file(path, 'r') as source:
+        with open(path, 'r') as source:
             data = load(source)
 
         if "http_port" in data:
