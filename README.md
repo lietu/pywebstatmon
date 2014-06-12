@@ -21,7 +21,7 @@ It looks like the tool currently only works with Python 2.7, will try and fix th
 
 It logs to a file and to console, and has a simple WebUI for viewing the status.
 
-![WebUI screenshot](https://github.com/lietu/pywebmonstat/raw/master/screenshot.jpg)
+![WebUI screenshot](https://raw.githubusercontent.com/lietu/pywebstatmon/master/screenshot.jpg)
 
 
 ## Installation
