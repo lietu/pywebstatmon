@@ -1,6 +1,11 @@
 from time import time
-from urllib import urlopen
 from utils.log import log
+
+# To support Python 2 and 3
+try:
+    from urllib.request import urlopen
+except ImportError:
+    from urllib import urlopen
 
 
 class Monitor(object):
