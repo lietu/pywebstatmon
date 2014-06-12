@@ -17,6 +17,12 @@ The main goals for this small tool are:
 It looks like the tool currently only works with Python 2.7, will try and fix the issues with other versions at some point in time. Feel free to help!
 [![Build Status](https://travis-ci.org/lietu/pywebstatmon.svg?branch=master)](https://travis-ci.org/lietu/pywebstatmon)
 
+## How does it look?
+
+It logs to a file and to console, and has a simple WebUI for viewing the status.
+
+![WebUI screenshot](https://github.com/lietu/pywebmonstat/raw/master/screenshot.jpg)
+
 
 ## Installation
 
