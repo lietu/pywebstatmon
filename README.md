@@ -14,7 +14,9 @@ The main goals for this small tool are:
 
 ## What's the status currently?
 
-It looks like the tool currently only works with Python 2.7, will try and fix the issues with other versions at some point in time. Feel free to help!
+The tool should work with Python 2.6, 2.7 and 3.3. With 3.2 there's some odd issues with requirements.
+
+If the above is true, this should be green:
 [![Build Status](https://travis-ci.org/lietu/pywebstatmon.svg?branch=master)](https://travis-ci.org/lietu/pywebstatmon)
 
 ## How does it look?
